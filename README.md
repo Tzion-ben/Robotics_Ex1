@@ -1,9 +1,12 @@
 Drone Simulator
+The code is based on the code from the assignment guidelines.
 The primary objective of this project is to develop an effective solution for a small drone to fly autonomously inside an indoor environment without collisions or crashes. This fully autonomous 2D drone simulator aims to be as realistic as possible, incorporating LiDAR sensors, a gyroscope sensor, an optical flow sensor, and a speed sensor. Additionally, it features area mapping capabilities as the drone navigates. The project is written in Java.
 
 Getting Started
 Ensure all files are located within Eclipse or any other suitable explorer. The "Maps" folder contains several maps with designated routes and obstacles.
-In the "SimulationWindow" main class, you will find a map object with the path to any map you wish to test. In the "Drone" class, there is a path to the image representing the drone. Once these are set up, the simulator is ready to launch.
+In the "SimulationWindow" main class, you will find a map object with the path to any map you wish to test.
+When you start the simulator, a dialog window will prompt you to choose your map. If the selected map file is incorrect, the dialog will prompt you to choose again until you select the correct map.
+In the "Drone" class, there is a path to the image representing the drone. Once these are set up, the simulator is ready to launch.
 
 Sensors
 LiDAR: Measures the distance to obstacles ahead and returns the distance if an obstacle is detected, or a maximum sample distance of 300 if none is detected. Our project uses three LiDAR sensors: one facing forward, one at 90 degrees, and one at -90 degrees.
