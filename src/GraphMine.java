@@ -14,12 +14,12 @@ import com.mxgraph.layout.mxCircleLayout;
 import com.mxgraph.layout.mxIGraphLayout;
 import com.mxgraph.swing.mxGraphComponent;
 
-public class Graph {
+public class GraphMine {
 
 	DefaultDirectedGraph<Point, DefaultEdge> g;
     private DefaultWeightedEdge e1;
     
-    public Graph() {
+    public GraphMine() {
     	g = new DefaultDirectedGraph<Point, DefaultEdge>(DefaultEdge.class);
     }
     public void addVertex(Point name) {
